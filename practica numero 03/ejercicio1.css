@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1 1 300px; /* Ajustar el ancho mínimo según necesidad */
+    padding: 80px;
+    text-align: center;
+    border: 20px solid #dddddd55;
+}
+
+/* Estilos para pantallas menores a 900px */
+@media (max-width: 900px) {
+    .container {
+        justify-content: column;
+    }
+}
+
+/* Estilos para pantallas menores a 480px */
+@media (max-width: 480px) {
+    .card {
+        flex-basis: 100%;
+    }
+}

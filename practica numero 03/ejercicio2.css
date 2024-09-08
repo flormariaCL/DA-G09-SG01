@@ -1,0 +1,48 @@
+/* styles.css */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribuye las tarjetas horizontalmente */
+}
+
+.card {
+    flex: 1 1 300px;
+    padding: 80px;
+    text-align: center;
+    border: 20px solid #dddddd55;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    justify-content: space-between; /* Distribuye los enlaces horizontalmente */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ababab;
+}
+
+/* Media queries estilos para pantallas menores a 900px */
+@media (max-width: 900px) {
+    .container {
+        justify-content: column; /* Centra las tarjetas en pantallas medianas */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-basis: 100%; /* Hace que las tarjetas ocupen todo el ancho en pantallas pequeñas */
+    }
+    .menu {
+        flex-direction: column; /* Apila los enlaces verticalmente en pantallas pequeñas */
+        align-items: center; /* Centra los enlaces verticalmente */
+    }
+}

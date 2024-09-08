@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+            align-items: stretch;
+            background-color: #ffffff;
+        }
+          
+          .flex-container > div {
+            background-color: rgb(219, 195, 217);
+            color: rgb(0, 0, 0);
+            margin: 20px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 40px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: inherit; /* hereda el color del contenedor */
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Flexbox y Breakpoints</title>
+    <link rel="stylesheet" href="ejercicio2.css">
+
+</head>
+<body>
+    <div class="flex-container">
+        <div class="menu"><a href="#">GATOS </a></div>
+        <div class="menu"><a href="#">MEMES</a></div>
+      </div>
+
+    <main class="container">
+        <div class="card">
+            <img src="gato.jpg" alt="Responsive" width="480" height="900">
+            <h2>Responsive</h2>
+            <p>Built with responsive design. Looks good on all screen sizes.</p>
+        </div>
+        <div class="card">
+            <img src="logo.jpg" alt="Standard CSS" width="480" height="900">
+            <h2>Standard CSS</h2>
+            <p>Easy to learn. No need for frameworks.</p>
+        </div>
+    </main>
+</body>
+</html>
